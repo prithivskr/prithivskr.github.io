@@ -69,5 +69,5 @@ postCtx =
 config :: Configuration
 config =
   defaultConfiguration
-    { destinationDirectory = "build"
+    { destinationDirectory = "docs"
     }
