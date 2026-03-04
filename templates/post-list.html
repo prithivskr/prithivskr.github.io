@@ -1,0 +1,17 @@
+<ul class="post-list">
+    $for(posts)$
+        <li class="post-item">
+            <article class="post-preview">
+                <h2 class="post-preview-title">
+                    <a href="$url$">$title$</a>
+                </h2>
+                <p class="post-meta">
+                    &mdash;$date$
+                    $if(author)$
+                        , by $author$
+                    $endif$
+                </p>
+            </article>
+        </li>
+    $endfor$
+</ul>
