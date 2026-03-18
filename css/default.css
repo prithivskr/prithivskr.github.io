@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,300..700;1,300..700&display=swap");
 
 :root {
-  --page-bg: #efeff2;
-  --text: #1a1a1d;
+  --page-bg: #ECECEC;
+  --text: #3C3744;
   --muted: #7f7f88;
   --line: #d7d8df;
-  --accent: #174563;
+  --accent: #C97B68;
 }
 
 * {
@@ -43,7 +43,7 @@ a {
 
 .logo {
   padding-bottom: 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   border-bottom: 1px solid var(--line);
 }
 
@@ -51,7 +51,7 @@ a {
   font-family: "Jost", sans-serif;
   color: var(--text);
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.1;
 }
 
@@ -289,7 +289,7 @@ main pre {
   }
 
   .logo a {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 
   .index-page main {
@@ -304,20 +304,6 @@ main pre {
 
   .index-page .page-title {
     margin-bottom: 0;
-  }
-
-  .lead {
-    margin-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  p, li {
-    font-size: 1.06rem;
-  }
-}
-
-  .logo a {
-    font-size: 1.9rem;
   }
 
   .lead {
