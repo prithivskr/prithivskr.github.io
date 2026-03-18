@@ -1,6 +1,12 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
+title: Hi!
+main-image: /images/main.png
+is_index: true
 ---
+
+<p class="lead">
+    I'm Prithiv, a first-year undergraduate at the University of Illinois Urbana-Champaign where I'm studying Statistics &amp; Computer Science. My focus is in systems, programming languages, and formal methods. I'm particularly interested in using logic and mathematics to design software and systems that are expressive and correct by construction. Outside of academics, I enjoy reading and hiking. You can reach me at psudh[at]illinois[dot]edu and find my work on <a href="https://github.com/prithivskr">GitHub</a>.
+</p>
+
+{% include post-list.html posts=site.posts %}

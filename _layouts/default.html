@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Prithiv Roshan Sudhakar - {{ page.title }}</title>
+        <link rel="stylesheet" href="/css/default.css" />
+        {% seo %}
+    </head>
+    <body class="{% if page.is_index %}index-page{% endif %}">
+        <div class="layout">
+            <aside class="sidebar">
+                <div class="logo">
+                    <a href="/">Prithiv Roshan Sudhakar</a>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="/archive.html">Archive</a>
+                    <a href="/projects.html">Projects</a>
+                    <a href="/Resume.pdf">Resume</a>
+                </nav>
+            </aside>
+
+            <div class="content-wrap">
+                <main role="main">
+                    {% if page.main-image %}
+                    <div class="main-image">
+                        <img src="{{ page.main-image }}" alt="Profile Picture" />
+                    </div>
+                    {% endif %}
+                    <h1 class="page-title">{{ page.title }}</h1>
+                    {{ content }}
+                </main>
+
+                {% if page.is_index or page.last_updated %}
+                <footer class="site-footer">
+                    <p>Last updated on {% if page.last_updated %}{{ page.last_updated }}{% else %}{{ site.time | date: "%B %e, %Y" }}{% endif %}</p>
+                </footer>
+                {% endif %}
+            </div>
+        </div>
+    </body>
+</html>
