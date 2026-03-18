@@ -137,6 +137,19 @@ a:focus {
   padding-bottom: 0;
 }
 
+.index-page main > *:not(.main-image):not(.page-title):not(.lead):not(.post-list) {
+  grid-column: 1 / span 2;
+}
+
+.index-page h3 {
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.index-page ul {
+  padding-left: 1.5rem;
+}
+
 .index-page .post-list {
   grid-column: 1 / span 2;
   margin-top: 2rem;
@@ -163,6 +176,12 @@ a:focus {
 
 p,
 li {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+}
+
+h3 {
+  margin: 1.5rem 0 0.2rem;
   font-size: 1.2rem;
 }
 
